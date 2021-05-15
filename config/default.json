@@ -1,0 +1,62 @@
+{
+    "dbServer": {
+        "database": "bap_dev",
+        "host": "mongodb://127.0.0.1:27017/bap"
+    },
+    "webServer": {
+        "url": "http://localhost",
+        "port": 3030
+    },
+    "system": {
+        "name": "Docs Support",
+        "emailId": "test@test.com"
+    },
+    "store": {
+        "provider": "file-store"
+    },
+    "providers": {
+        "file-store": {
+            "dir": "public/files",
+            "root": "http://localhost:3030/files"
+        },
+        "aws-s3": {
+            "accessKeyId": "",
+            "secretAccessKey": "+NpbcnFnwpy",
+            "bucketName": ""
+        },
+        "cloudnary": {
+            "cloud_name": "",
+            "api_key": "",
+            "api_secret": ""
+        },
+        "directory": {
+            "url": ""
+        },
+        "send-it": {
+            "url": ""
+        }
+    },
+    "queueServer": {
+        "disabled": false,
+        "name": "fms-offline",
+        "port": 6379,
+        "host": "127.0.0.1",
+        "ns": "fms-offline",
+        "timeout": 1800000,
+        "processors": {
+            "dir": "processors",
+            "default": {
+                "dir": "defaults",
+                "file": "default.js"
+            }
+        }
+    },
+    "logger": {
+        "console": {
+            "level": "silly",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        }
+    }
+}

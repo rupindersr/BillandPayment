@@ -1,0 +1,15 @@
+/node_modules
+/public/bower_components
+/public/public/bower_components
+/.idea
+.jenkins
+/logs/*
+!/logs/*.txt
+/config/local.json
+/config/dev.json
+/config/development.json
+/config/qa.json
+/config/test.json
+/config/prod.json
+/config/production.json
+/bin/_ttd_log_
